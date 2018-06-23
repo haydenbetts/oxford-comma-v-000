@@ -6,6 +6,6 @@ def oxford_comma(array)
   else
     # refactor
     array[-1] = "and #{array[-1]}"
-    array.join(",")
+    array.join(", ")
   end
 end
