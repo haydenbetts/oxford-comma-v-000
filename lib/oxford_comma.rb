@@ -5,14 +5,6 @@ elsif array.length == 2
   return "#{array[0]} and #{array[1]}"
 else
   # refactor
-  fruits[-1] = "and #{fruits[-1]}"
-  i = 0
-  concat = ""
-  until i == array.length - 1
-     concat << "#{array[i]}, "
-     i += 1
-   end
-   concat << "and #{array.last}"
- end
- return concat
+  array[-1] = "and #{array[-1]}"
+  array.join(",")
 end
