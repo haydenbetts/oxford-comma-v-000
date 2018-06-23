@@ -4,6 +4,8 @@ if array.length <= 1
 elsif array.length == 2
   return "#{array[0]} and #{array[1]}"
 else
+  # refactor
+  fruits[-1] = "and #{fruits[-1]}"
   i = 0
   concat = ""
   until i == array.length - 1
